@@ -6,8 +6,14 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef, useState } from 'react';
 import { Float, useGLTF, useTexture } from '@react-three/drei';
+import { useMediaQuery } from 'react-responsive';
+import {calculateSizes} from '../constants/index.js'
 
 const Cube = ({ ...props }) => {
+
+  const isSmall = useMediaQuery({maxWidth: 480})
+  const sizes = calculateSizes(isSmall)
+
   const { nodes } = useGLTF('models/cube.glb');
 
   const texture = useTexture('textures/cube.png');
@@ -33,7 +39,7 @@ const Cube = ({ ...props }) => {
 
   return (
     <Float floatIntensity={2}>
-      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={0.74} dispose={null} {...props}>
+      <group position={[9, -4, 0]} rotation={[2.6, 0.8, -1.8]} scale={sizes.cubeScale} dispose={null} {...props}>
         <mesh
           ref={cubeRef}
           geometry={nodes.Cube.geometry}
