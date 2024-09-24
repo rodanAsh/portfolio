@@ -55,13 +55,13 @@ const Contact = () => {
 
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
+          <p className="sm:text-lg text-sm text-white-600 sm:mt-3 mt-2">
             Whether you're looking to build a new website, improve your existing platform, or bring a unique project to
             life, I'm here to help.
           </p>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
-            <label className="space-y-3">
+          <form ref={formRef} onSubmit={handleSubmit} className="sm:mt-12 mt-8 flex flex-col space-y-7">
+            <label className="sm:space-y-3 space-y-2">
               <span className="field-label">Full Name</span>
               <input
                 type="text"
@@ -74,7 +74,7 @@ const Contact = () => {
               />
             </label>
 
-            <label className="space-y-3">
+            <label className="sm:space-y-3 space-y-2">
               <span className="field-label">Email address</span>
               <input
                 type="email"
@@ -87,7 +87,7 @@ const Contact = () => {
               />
             </label>
 
-            <label className="space-y-3">
+            <label className="sm:space-y-3 space-y-2">
               <span className="field-label">Your message</span>
               <textarea
                 name="message"
