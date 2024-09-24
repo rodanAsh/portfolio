@@ -1,7 +1,6 @@
 import React from 'react'
 import github from '../../public/assets/github.svg'
-import twitter from '../../public/assets/twitter.svg'
-import linkedin from '../../public/assets/instagram.svg'
+import linkedin from '../../public/assets/linkedin.svg'
 
 const Footer = () => {
     const year = new Date()
@@ -16,9 +15,6 @@ const Footer = () => {
         <div className='flex gap-3'>
             <div className="social-icon">
                 <img src={github} alt="github" className='w-1/2 h-1/2' />
-            </div>
-            <div className="social-icon">
-                <img src={twitter} alt="twitter" className='w-1/2 h-1/2' />
             </div>
             <div className="social-icon">
                 <img src={linkedin} alt="linkedin" className='w-1/2 h-1/2' />
