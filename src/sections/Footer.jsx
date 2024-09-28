@@ -13,12 +13,18 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-3'>
-            <div className="social-icon">
-                <img src={github} alt="github" className='w-1/2 h-1/2' />
-            </div>
-            <div className="social-icon">
-                <img src={linkedin} alt="linkedin" className='w-1/2 h-1/2' />
-            </div>
+            <a href="https://github.com/rodanAsh" target='_blank' rel='noreferrer'>
+                <div className="social-icon cursor-pointer">
+                    <img src={github} alt="github" className='w-1/2 h-1/2' />
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aakashash/" target='_blank' rel='noreferrer'>
+                <div className="social-icon cursor-pointer">
+                    <img src={linkedin} alt="linkedin" className='w-1/2 h-1/2' />
+                </div>
+            </a>
+            
         </div>
 
         <p className='text-white-500'>&copy; {year.getFullYear()} Aakash. All rights reserved</p>
