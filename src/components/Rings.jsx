@@ -7,8 +7,8 @@ import { useMediaQuery } from 'react-responsive';
 
 const Rings = ({ position }) => {
   const isSmall = useMediaQuery({maxWidth: 480})
-  const sizes = calculateSizes(isSmall)
 
+  const sizes = calculateSizes(isSmall)
 
   const refList = useRef([]);
   const getRef = useCallback((mesh) => {

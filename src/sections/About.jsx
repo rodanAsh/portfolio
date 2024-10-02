@@ -21,14 +21,14 @@ const About = () => {
   }
   return (
     <section className='c-space my-20' id='about'>
-      <p className='head-text mb-10'>About Me</p>
+      <p className='head-text mb-10'>About me</p>
         <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full'>
           <div className='col-span-1 xl:row-span-3'>
             <div className="grid-container">
               <img src={grid1} alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain' />
               <div>
-                <p className='grid-headtext'>Hi, I'm Aakash </p>
-                <p className='grid-subtext'>Web Development Enthusiasist with keen interest to develop swashbuckling user interfaces using Reactjs library.</p>
+                <p className='grid-headtext'>Hey, I'm Aakash! </p>
+                <p className='grid-subtext'>I grew up in the South India and love all things creative. From the misty forests to the vibrant city streets, my surroundings have always fueled my passion for design and coding.</p>
               </div>
             </div>
           </div>

@@ -6,8 +6,8 @@ import {calculateSizes} from '../constants/index.js'
 import { useMediaQuery } from 'react-responsive';
 
 const Target = (props) => {
-
   const isSmall = useMediaQuery({maxWidth: 480})
+
   const sizes = calculateSizes(isSmall)
 
   const targetRef = useRef()

@@ -12,6 +12,7 @@ import {calculateSizes} from '../constants/index.js'
 const Cube = ({ ...props }) => {
 
   const isSmall = useMediaQuery({maxWidth: 480})
+
   const sizes = calculateSizes(isSmall)
 
   const { nodes } = useGLTF('models/cube.glb');

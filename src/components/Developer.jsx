@@ -6,13 +6,13 @@ const Developer = ({ animationName = 'idle', ...props}) => {
   const { nodes, materials } = useGLTF('/models/human/developer.glb')
   const { animations : idleAnimation } = useFBX('/models/human/idle.fbx')
   const { animations : saluteAnimation } = useFBX('/models/human/salute.fbx')
-  const { animations : clappingAnimation } = useFBX('/models/human/clapping.fbx')
+  const { animations : victoryAnimation } = useFBX('/models/human/victory.fbx')
 
   idleAnimation[0].name = 'idle';
   saluteAnimation[0].name = 'salute';
-  clappingAnimation[0].name = 'clapping';
+  victoryAnimation[0].name = 'clapping';
 
-  const { actions } = useAnimations([idleAnimation[0],saluteAnimation[0],clappingAnimation[0]],groupRef);
+  const { actions } = useAnimations([idleAnimation[0],saluteAnimation[0],victoryAnimation[0]],groupRef);
 
   useEffect(() => {
 

@@ -7,6 +7,7 @@ const ReactLogo = (props) => {
   const { nodes, materials } = useGLTF('/models/react.glb')
 
   const isSmall = useMediaQuery({maxWidth: 480})
+
   const sizes = calculateSizes(isSmall)
 
   return (
