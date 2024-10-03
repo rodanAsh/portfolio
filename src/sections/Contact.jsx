@@ -50,7 +50,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col border border-gray-600 pb-4 rounded-lg">
         {/* <img src={terminal} alt="terminal-bg" className="absolute inset-0 min-h-screen" /> */}
-        <div className='bg-gray-700 w-full rounded-t-lg h-[60px]'></div>
+        <div className='absolute top-0 bg-gray-700 w-full rounded-t-md h-[60px]'></div>
         <div className='absolute top-[-75px] left-[10px] flex items-center'><span className='text-9xl text-red-400'>.</span><span className='text-9xl text-yellow-200'>.</span><span className='text-9xl text-green-300'>.</span></div>
         <div className='absolute top-3 right-[20px] font-medium text-3xl px-2'>+</div>
         <div className="contact-container">

@@ -61,7 +61,7 @@ const Hero = () => {
     <section ref={componentRef} id='home' className='px-4 py-10 md:px-6 md:py-12 lg:py-14'>
         <div className='mx-auto w-full max-w-7xl'>
             <div className='grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center'>
-                <Shapes />
+                {/* <Shapes /> */}
                 <div className='col-start-1 md:row-start-1'>
                     <h1 className='mb-8 text-[clamp(3rem,18vmin,20rem)] font-extrabold leading-none tracking-tighter' aria-label='Hi, Iam Aakash'>
                         <span className='block text-slate-300'>

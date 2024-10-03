@@ -78,7 +78,7 @@ const Header = () => {
 
           <div className="relative z-50 hidden flex-row items-center gap-1 bg-transparent py-0 md:flex">
             {navLinks.map(({ id, name, href }, index) => (
-              <React.Fragment key={index}>
+              <React.Fragment key={id}>
                 <li>
                   <a
                     href={href}

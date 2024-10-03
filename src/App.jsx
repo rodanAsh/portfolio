@@ -1,5 +1,4 @@
 import React from 'react'
-import { lazy, Suspense } from 'react'
 import Navbar from './sections/Navbar'
 import About from './sections/About'
 import Projects from './sections/Projects'
@@ -20,8 +19,7 @@ const App = () => {
         <Contact />
         <Footer />
         <div className='absolute inset-0 -z-50 max-h-screen background-gradient'></div>
-      </section>
-      
+      </section> 
     </main>
   )
 }
