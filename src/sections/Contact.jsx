@@ -50,8 +50,9 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col border border-gray-600 pb-4 rounded-lg">
         {/* <img src={terminal} alt="terminal-bg" className="absolute inset-0 min-h-screen" /> */}
+        <div className='bg-gray-700 w-full rounded-t-lg h-[60px]'></div>
         <div className='absolute top-[-75px] left-[10px] flex items-center'><span className='text-9xl text-red-400'>.</span><span className='text-9xl text-yellow-200'>.</span><span className='text-9xl text-green-300'>.</span></div>
-        <div className='absolute top-4 right-[20px] text-2xl bg-gray-700 rounded-md px-2'>+</div>
+        <div className='absolute top-3 right-[20px] font-medium text-3xl px-2'>+</div>
         <div className="contact-container">
           <h3 className="head-text mt-2">Let's talk</h3>
           <p className="sm:text-lg text-sm text-white-600 sm:mt-3 mt-2">

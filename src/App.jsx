@@ -12,15 +12,14 @@ const App = () => {
   return (
     <main className='max-w-7xl mx-auto text-slate-100'>
       <section className='relative min-h-screen'>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
-      <div className='absolute inset-0 -z-50 max-h-screen background-gradient'></div>
-      <div className='absolute pointer-events-none -z-40 inset-0 h-full bg-[url("/noisetexture.jpg")] opacity-20 mix-blend-soft-light'></div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Footer />
+        <div className='absolute inset-0 -z-50 max-h-screen background-gradient'></div>
       </section>
       
     </main>
