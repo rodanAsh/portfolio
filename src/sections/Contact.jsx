@@ -48,9 +48,10 @@ const Contact = () => {
     }
   return (
     <section className="c-space my-20" id="contact">
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src={terminal} alt="terminal-bg" className="absolute inset-0 min-h-screen" />
-
+      <div className="relative min-h-screen flex items-center justify-center flex-col border border-gray-600 pb-4 rounded-lg">
+        {/* <img src={terminal} alt="terminal-bg" className="absolute inset-0 min-h-screen" /> */}
+        <div className='absolute top-[-75px] left-[10px] flex items-center'><span className='text-9xl text-red-400'>.</span><span className='text-9xl text-yellow-200'>.</span><span className='text-9xl text-green-300'>.</span></div>
+        <div className='absolute top-4 right-[20px] text-2xl bg-gray-700 rounded-md px-2'>+</div>
         <div className="contact-container">
           <h3 className="head-text mt-2">Let's talk</h3>
           <p className="sm:text-lg text-sm text-white-600 sm:mt-3 mt-2">
@@ -58,8 +59,8 @@ const Contact = () => {
             life, I'm here to help.
           </p>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="sm:mt-8 mt-8 flex flex-col space-y-7">
-            <label className="sm:space-y-3 space-y-2">
+          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+            <label className="space-y-3">
               <span className="field-label">Full Name</span>
               <input
                 type="text"
@@ -72,7 +73,7 @@ const Contact = () => {
               />
             </label>
 
-            <label className="sm:space-y-3 space-y-2">
+            <label className="space-y-3">
               <span className="field-label">Email address</span>
               <input
                 type="email"
@@ -85,14 +86,14 @@ const Contact = () => {
               />
             </label>
 
-            <label className="sm:space-y-3 space-y-2">
+            <label className="space-y-3">
               <span className="field-label">Your message</span>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={5}
+                rows={4}
                 className="field-input"
                 placeholder="Share your thoughts or inquiries..."
               />

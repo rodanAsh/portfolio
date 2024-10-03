@@ -8,11 +8,12 @@ import { Center, OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../components/CanvasLoader'
 import DemoComputer from '../components/DemoComputer'
 import { useMediaQuery } from 'react-responsive'
+
 const Projects = () => {
     const [selectedProjectIndex,setSelectedProjectIndex] = useState(0)
     const projectCount = myProjects.length;
     const currentProject = myProjects[selectedProjectIndex]
-    const isSmall = useMediaQuery({maxWidth: 480})
+    const isSmall = useMediaQuery({maxWidth: 640})
     
     const handleNavigation = (direction) => {
         setSelectedProjectIndex((prev) => {
@@ -35,8 +36,8 @@ const Projects = () => {
                     <img src={currentProject.logo} alt="logo" className='w-10 h-10 shadow-sm' />
                 </div>
                 <div className='flex flex-col gap-5 text-white-600 my-5'>
-                    <p className='text-white text-2xl font-semibold animatedText text-justify'>{currentProject.title}</p>
-                    <p className='text-justify'>{currentProject.desc}</p>
+                    <p className='text-white text-2xl font-semibold animatedText'>{currentProject.title}</p>
+                    <p>{currentProject.desc}</p>
                     <p>{currentProject.subdesc}</p>
                 </div>
 
@@ -77,8 +78,7 @@ const Projects = () => {
                         <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
                     </Canvas>
                 </div>
-            )}
-            
+            )}    
         </div>
     </section>
   )

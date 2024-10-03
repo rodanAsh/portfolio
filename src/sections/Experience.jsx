@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive'
 
 const Experience = () => {
     const [animationName,setAnimationName] = useState('idle')
-    const isSmall = useMediaQuery({maxWidth: 480})
+    const isSmall = useMediaQuery({maxWidth: 640})
   return (
     <div className='c-space my-20'>
         <div className='w-full text-white-600'>
@@ -48,7 +48,7 @@ const Experience = () => {
                                     <div className='sm:p-5 px-2.5 py-5'>
                                         <p className='font-bold text-white-800'>{name}</p>
                                         <p className='text-sm mb-5'>{pos} -- {duration}</p>
-                                        <p className='group-hover:text-white text-justify text-sm transition ease-in-out duration-500'>{title}</p>
+                                        <p className='group-hover:text-white text-sm transition ease-in-out duration-500'>{title}</p>
                                     </div>
                                 </div>
                             ))

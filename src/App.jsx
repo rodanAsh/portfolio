@@ -1,4 +1,5 @@
 import React from 'react'
+import { lazy, Suspense } from 'react'
 import Navbar from './sections/Navbar'
 import About from './sections/About'
 import Projects from './sections/Projects'
