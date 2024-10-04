@@ -1,31 +1,36 @@
-import { Canvas } from '@react-three/fiber'
-import { ContactShadows, Environment } from '@react-three/drei'
-import { Suspense} from 'react'
-import CanvasLoader from './CanvasLoader'
-import Geometries from './Geometries'
+import { Canvas } from "@react-three/fiber";
+import { ContactShadows, Environment } from "@react-three/drei";
+import { Suspense } from "react";
+import CanvasLoader from "./CanvasLoader";
+import Geometries from "./Geometries";
 
 const Shapes = () => {
+  return (
+    <div className="row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
+      <Canvas
+        className="z-0"
+        shadows
+        gl={{ antialias: false }}
+        dpr={[1, 1.5]}
+        camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <Geometries />
+          <ContactShadows
+            position={[0, -3.5, 0]}
+            opacity={0.65}
+            scale={40}
+            blur={1}
+            far={9}
+          />
+          <Environment preset="studio" />
+        </Suspense>
+      </Canvas>
+    </div>
+  );
+};
 
-    return (
-        <div className='row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0'>
-            <Canvas className='z-0' shadows gl={{antialias:false}} dpr={[1, 1.5]} camera={{position:[0, 0, 25], fov: 30, near: 1, far: 40}}>
-                <Suspense fallback={<CanvasLoader />}>
-                    <Geometries />
-                    <ContactShadows
-                        position={[0, -3.5, 0]}
-                        opacity={0.65}
-                        scale={40}
-                        blur={1}
-                        far={9}
-                    />
-                    <Environment preset='studio' />
-                </Suspense>
-            </Canvas>
-        </div>
-    )
-}
-
-export default Shapes
+export default Shapes;
 
 // const Geometries = () => {
 //     const geometries = [
@@ -63,12 +68,12 @@ export default Shapes
 //         new THREE.MeshStandardMaterial({ color: 0xe74c3c, roughness: 0.1 }),
 //         new THREE.MeshStandardMaterial({ color: 0x8e44ad, roughness: 0.1 }),
 //         new THREE.MeshStandardMaterial({ color: 0x1abc9c, roughness: 0.1 }),
-//         new THREE.MeshStandardMaterial({ 
+//         new THREE.MeshStandardMaterial({
 //             roughness: 0,
 //             metalness: 0.1,
 //             color: 0x2980b9,
 //         }),
-//         new THREE.MeshStandardMaterial({ 
+//         new THREE.MeshStandardMaterial({
 //             roughness: 0.1,
 //             metalness: 0.5,
 //             color: 0x2c3e50,

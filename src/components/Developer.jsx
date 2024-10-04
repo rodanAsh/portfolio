@@ -1,25 +1,27 @@
-import React, { useEffect, useRef } from 'react'
-import { useAnimations, useFBX, useGLTF } from '@react-three/drei'
+import React, { useEffect, useRef } from "react";
+import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 
-const Developer = ({ animationName = 'idle', ...props}) => {
-  const groupRef = useRef()
-  const { nodes, materials } = useGLTF('/models/human/developer.glb')
-  const { animations : idleAnimation } = useFBX('/models/human/idle.fbx')
-  const { animations : saluteAnimation } = useFBX('/models/human/salute.fbx')
-  const { animations : victoryAnimation } = useFBX('/models/human/victory.fbx')
+const Developer = ({ animationName = "idle", ...props }) => {
+  const groupRef = useRef();
+  const { nodes, materials } = useGLTF("/models/human/developer.glb");
+  const { animations: idleAnimation } = useFBX("/models/human/idle.fbx");
+  const { animations: saluteAnimation } = useFBX("/models/human/salute.fbx");
+  const { animations: victoryAnimation } = useFBX("/models/human/victory.fbx");
 
-  idleAnimation[0].name = 'idle';
-  saluteAnimation[0].name = 'salute';
-  victoryAnimation[0].name = 'clapping';
+  idleAnimation[0].name = "idle";
+  saluteAnimation[0].name = "salute";
+  victoryAnimation[0].name = "clapping";
 
-  const { actions } = useAnimations([idleAnimation[0],saluteAnimation[0],victoryAnimation[0]],groupRef);
+  const { actions } = useAnimations(
+    [idleAnimation[0], saluteAnimation[0], victoryAnimation[0]],
+    groupRef
+  );
 
   useEffect(() => {
+    actions[animationName].reset().fadeIn(0.5).play();
 
-    actions[animationName].reset().fadeIn(0.5).play()
-
-    return () => actions[animationName].fadeOut(0.5)
-  },[animationName])
+    return () => actions[animationName].fadeOut(0.5);
+  }, [animationName]);
 
   return (
     <group {...props} dispose={null} ref={groupRef}>
@@ -87,9 +89,9 @@ const Developer = ({ animationName = 'idle', ...props}) => {
         skeleton={nodes.Wolf3D_Body.skeleton}
       />
     </group>
-  )
-}
+  );
+};
 
-useGLTF.preload('/models/human/developer.glb')
+useGLTF.preload("/models/human/developer.glb");
 
 export default Developer;
