@@ -19,7 +19,7 @@ export const navLinks = [
 export const myProjects = [
   {
     title: 'Khaadi - E-Commerce Clothing Store',
-    desc: "The React E-commerce Clothing Store UI offers a seamless shopping experience with well-organized categories like Men's Wear, Women's Wear, and Kids' Wear. Each category dynamically displays products, and product pages provide detailed information, including images, prices, and availability. The store’s key feature is its cart functionality, allowing users to add, remove, or adjust product quantities directly from listings or product pages. The cart updates in real-time, and a dedicated cart page presents all selected items with options for adjustment before checkout.",
+    desc: "Khaadi is a E-commerce Clothing Store UI offers a seamless shopping experience with well-organized categories like Men's Wear, Women's Wear, and Kids' Wear. Each category dynamically displays products, and product pages provide detailed information, including images, prices, and availability. The store’s key feature is its cart functionality, allowing users to add, remove, or adjust product quantities directly from listings or product pages. The cart updates in real-time, and a dedicated cart page presents all selected items with options for adjustment before checkout.",
     subdesc:
       "Built with HTML, CSS, JavaScript, and React.js, the UI offers a cohesive user experience. It is fully responsive, adjusting fluidly to different screen sizes, ensuring usability on both desktop and mobile devices.",
     href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',

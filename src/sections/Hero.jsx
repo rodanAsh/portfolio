@@ -1,12 +1,9 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import Shapes from "../components/Shapes";
-import { lazy, Suspense } from "react";
-import CanvasLoader from "../components/CanvasLoader";
 import { MdArrowOutward } from "react-icons/md";
 import gsap from "gsap";
 
-// const HeroAnimation = lazy(() => import('../components/HeroAnimation'))
 
 const Hero = () => {
   const componentRef = useRef(null);
@@ -98,7 +95,8 @@ const Hero = () => {
             </h1>
             <button className="ml-3">
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/1zRrio6UyoEe6gqK6j1lN0alINff-ueLM/view"
+                target="_blank"
                 className="group relative flex w-fit items-center justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50 px-4 py-2 font-bold transition-transform ease-out hover:scale-105"
               >
                 <span className="absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0" />
