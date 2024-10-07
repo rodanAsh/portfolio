@@ -18,11 +18,11 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: 'Khaadi - E-Commerce Clothing Store',
-    desc: "Khaadi is a E-commerce Clothing Store UI offers a seamless shopping experience with well-organized categories like Men's Wear, Women's Wear, and Kids' Wear. Each category dynamically displays products, and product pages provide detailed information, including images, prices, and availability. The store’s key feature is its cart functionality, allowing users to add, remove, or adjust product quantities directly from listings or product pages. The cart updates in real-time, and a dedicated cart page presents all selected items with options for adjustment before checkout.",
+    title: 'Khaadi - E Commerce Clothing Store',
+    desc: "Khaadi provides a seamless shopping experience with dynamic product listings across well-organized categories. It features a cart functionality for adding, removing, or adjusting items, with a dedicated cart page for review before checkout.",
     subdesc:
-      "Built with HTML, CSS, JavaScript, and React.js, the UI offers a cohesive user experience. It is fully responsive, adjusting fluidly to different screen sizes, ensuring usability on both desktop and mobile devices.",
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      "Built with HTML, CSS, JavaScript, and React.js, the UI offers a cohesive user experience. It is fully responsive, adjusting fluidly to different screen sizes.",
+    href: 'https://khaadi.pages.dev/',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
@@ -56,10 +56,10 @@ export const myProjects = [
   },
   {
     title: 'Daily Bugle - Blog Website',
-    desc: "Daily Bugle is a blog website that allows users to manage and view blog posts. Built with React.js on the front-end, it offers a responsive interface displaying post details like title, content, author, and date. The client-side communicates with a Node.js server via API endpoints, with the Fetch API handling data fetching for smooth interactions. The back-end, powered by Node.js and Express.js, creates a robust RESTful API, enabling real-time data flow between client and server. This scalable architecture ensures flexibility and maintainability for future enhancements.",
+    desc: "Daily Bugle is a blog website that enables users to manage and view posts. Built with React.js, it features a responsive interface that displays titles, content, authors, and dates. The client-side communicates with a Node.js server via API endpoints, using the Fetch API for data retrieval.",
     subdesc:
       "Daily Bugle is built with HTML, Tailwind, javascript, Reactjs for the client-side and Node.js for the server-side, featuring a custom API for managing blog posts.",
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    href: 'https://dailybugle.pages.dev/',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
@@ -92,11 +92,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'CryptoPlace - Cryto-Currency Tracking Application',
-    desc: "Cryptoplace is designed to provide real-time monitoring of various cryptocurrencies through a comprehensive dashboard. Users can track market trends, live price updates, market capitalization, trading volumes, and historical data. The website allows filtering and searching for specific coins while dynamically updating prices and charts. Integration with APIs like CoinGecko ensures accurate and up-to-date data, providing a reliable user experience.",
+    title: 'CryptoPlace - CrytoCurrency Tracking Application',
+    desc: "Cryptoplace provides real-time monitoring of cryptocurrencies through a comprehensive dashboard. Users can track market trends, live price updates, market capitalization, trading volumes, and historical data, while filtering and searching for specific coins. The site features dynamic price and chart updates, with integration of APIs like CoinGecko for accurate and up-to-date information.",
     subdesc:
       "Built with HTML, CSS, JavaScript, React.js and CoinGecko API, mainly designed to allow users to track their favorite cryptocurrencies.",
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    href: 'https://crypto-place.pages.dev/',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
@@ -130,43 +130,48 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   title: 'Horizon - Online Banking Platform',
-  //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-  //   subdesc:
-  //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-  //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-  //   texture: '/textures/project/project4.mp4',
-  //   logo: '/assets/project-logo4.png',
-  //   logoStyle: {
-  //     backgroundColor: '#0E1F38',
-  //     border: '0.2px solid #0E2D58',
-  //     boxShadow: '0px 0px 60px 0px #2F67B64D',
-  //   },
-  //   spotlight: '/assets/spotlight4.png',
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'TypeScript',
-  //       path: '/assets/typescript.png',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'Framer Motion',
-  //       path: '/assets/framer.png',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Chatapp - Realtime Chat Application',
+    desc: "Chatapp is a real-time chat application that enables live communication between users. It features a dynamic, responsive interface where messages are displayed with timestamps and usernames, automatically updating in real-time. Firebase handles data storage and synchronization, ensuring that all users in the chat room see messages instantly.",
+    subdesc:
+      "Built with HTML, CSS, JavaScript, React.js, and Firebase, the app is highly scalable and responsive, offering a smooth, real-time chatting experience across various devices with minimal latency.",
+    href: 'https://chatz-app.pages.dev/',
+    texture: '/textures/project/project4.mp4',
+    logo: '/assets/project-logo4.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+    },
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'HTML',
+        path: '/assets/html.svg',
+      },
+      {
+        id: 2,
+        name: 'CSS',
+        path: 'assets/css.svg',
+      },
+      {
+        id: 3,
+        name: 'Javascript',
+        path: '/assets/javascript.svg',
+      },
+      {
+        id: 4,
+        name: 'ReactJS',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 5,
+        name: 'Firebase',
+        path: '/assets/firebase.svg',
+      },
+    ],
+  },
   // {
   //   title: 'Imaginify - AI Photo Manipulation App',
   //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
@@ -206,20 +211,6 @@ export const myProjects = [
   // },
 ];
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
-  return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -3.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall ? [3, -6, 0] : isMobile ? [6, -5, 0] : isTablet ? [9, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [6.5, 2, 0] : isTablet ? [9.3, 3, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 10, 0] : isMobile ? [-13.3, 10, 0] : isTablet ? [-18, 10, 0] : [-24, 10, 0],
-    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-10, -10, -10] : isTablet ? [-13, -10, -10] : [-13, -13, -10],
-    cubeScale: isSmall ? 0.5 : 0.74,
-    reactLogoScale: isSmall ? 0.3 :0.4,
-    ringScale: isSmall ? 0.4 : 0.5,
-    targetScale: isSmall? 1.1 : 1.5,
-  };
-};
 
 export const workExperiences = [
   {
