@@ -33,9 +33,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hey, I'm Aakash! </p>
               <p className="grid-subtext">
-                I grew up in the South India and love all things creative. From
-                the misty forests to the vibrant city streets, my surroundings
-                have always fueled my passion for design and coding.
+                I grew up in the South India and love all things creative. From the misty forests to the vibrant streets of South India, my surroundings have always sparked my creativity and love for design and coding.
               </p>
             </div>
           </div>

@@ -18,7 +18,45 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: 'Khaadi - E Commerce Clothing Store',
+    title: 'VHeal - Appointment Booking Website',
+    desc: 'VHeal is a platform designed to simplify booking doctor appointments. Users can filter doctors based on their specialty and choose a convenient date and time slot within a 7-day availability window. The system provides a clean and responsive interface for a seamless user experience.',
+    subdesc:
+      'Built with React.js and Tailwind CSS, it efficiently addresses the need for streamlined healthcare appointment scheduling.',
+    href: 'https://vheal.vercel.app/',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/project-logo5.svg',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'Javascript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'HTML',
+        path: '/assets/html.svg',
+      },
+    ],
+  },
+
+  {
+    title: 'Khaadi - E-Commerce Clothing Store',
     desc: "Khaadi provides a seamless shopping experience with dynamic product listings across well-organized categories. It features a cart functionality for adding, removing, or adjusting items, with a dedicated cart page for review before checkout.",
     subdesc:
       "Built with HTML, CSS, JavaScript, and React.js, the UI offers a cohesive user experience. It is fully responsive, adjusting fluidly to different screen sizes.",
@@ -54,43 +92,7 @@ export const myProjects = [
       },
     ],
   },
-  {
-    title: 'Daily Bugle - Blog Website',
-    desc: "Daily Bugle is a blog website that enables users to manage and view posts. Built with React.js, it features a responsive interface that displays titles, content, authors, and dates. The client-side communicates with a Node.js server via API endpoints, using the Fetch API for data retrieval.",
-    subdesc:
-      "Daily Bugle is built with HTML, Tailwind, javascript, Reactjs for the client-side and Node.js for the server-side, featuring a custom API for managing blog posts.",
-    href: 'https://dailybugle.pages.dev/',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
-    spotlight: '/assets/spotlight2.png',
-    tags: [
-      {
-        id: 1,
-        name: 'TailwindCSS',
-        path: '/assets/tailwindcss.png',
-      },
-      {
-        id: 2,
-        name: 'Javascript',
-        path: 'assets/javascript.svg',
-      },
-      {
-        id: 3,
-        name: 'ReactJS',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 4,
-        name: 'NodeJS',
-        path: '/assets/nodejs.svg',
-      },
-    ],
-  },
+  
   {
     title: 'CryptoPlace - CrytoCurrency Tracking Application',
     desc: "Cryptoplace provides real-time monitoring of cryptocurrencies through a comprehensive dashboard. Users can track market trends, live price updates, market capitalization, trading volumes, and historical data, while filtering and searching for specific coins. The site features dynamic price and chart updates, with integration of APIs like CoinGecko for accurate and up-to-date information.",
@@ -130,6 +132,7 @@ export const myProjects = [
       },
     ],
   },
+
   {
     title: 'Chatapp - Realtime Chat Application',
     desc: "Chatapp is a real-time chat application that enables live communication between users. It features a dynamic, responsive interface where messages are displayed with timestamps and usernames, automatically updating in real-time. Firebase handles data storage and synchronization, ensuring that all users in the chat room see messages instantly.",
@@ -172,43 +175,45 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   title: 'Imaginify - AI Photo Manipulation App',
-  //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-  //   subdesc:
-  //     'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-  //   href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-  //   texture: '/textures/project/project5.mp4',
-  //   logo: '/assets/project-logo5.png',
-  //   logoStyle: {
-  //     backgroundColor: '#1C1A43',
-  //     border: '0.2px solid #252262',
-  //     boxShadow: '0px 0px 60px 0px #635BFF4D',
-  //   },
-  //   spotlight: '/assets/spotlight5.png',
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'TypeScript',
-  //       path: '/assets/typescript.png',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'Framer Motion',
-  //       path: '/assets/framer.png',
-  //     },
-  //   ],
-  // },
+  
+  {
+    title: 'Daily Bugle - Blog Website',
+    desc: "Daily Bugle is a blog website that enables users to manage and view posts. Built with React.js, it features a responsive interface that displays titles, content, authors, and dates. The client-side communicates with a Node.js server via API endpoints, using the Fetch API for data retrieval.",
+    subdesc:
+      "Daily Bugle is built with HTML, Tailwind, javascript, Reactjs for the client-side and Node.js for the server-side, featuring a custom API for managing blog posts.",
+    href: 'https://dailybugle.pages.dev/',
+    texture: '/textures/project/project2.mp4',
+    logo: '/assets/project-logo2.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      {
+        id: 1,
+        name: 'TailwindCSS',
+        path: '/assets/tailwindcss.png',
+      },
+      {
+        id: 2,
+        name: 'Javascript',
+        path: 'assets/javascript.svg',
+      },
+      {
+        id: 3,
+        name: 'ReactJS',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 4,
+        name: 'NodeJS',
+        path: '/assets/nodejs.svg',
+      },
+    ],
+  },
+  
 ];
 
 

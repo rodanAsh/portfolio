@@ -72,7 +72,7 @@ const Hero = () => {
     <section
       ref={componentRef}
       id="home"
-      className="px-4 py-10 md:px-6 md:py-12 lg:py-14"
+      className="px-4 py-4 md:px-6 md:py-8"
     >
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
