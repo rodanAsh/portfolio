@@ -81,7 +81,6 @@ const Hero = () => {
         <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
           <Shapes
             onReady = {() => setShapesReady(true)}
-            delayFrames={6}
           />
           <div className="col-start-1 md:row-start-1">
             <h1

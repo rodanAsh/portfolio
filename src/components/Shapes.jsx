@@ -4,8 +4,7 @@ import { Suspense, useRef } from "react";
 import CanvasLoader from "./CanvasLoader";
 import Geometries from "./Geometries";
 
-const Shapes = ({ onReady, delayFrames = 4 }) => {
-
+const Shapes = ({ onReady }) => {
   
 const WarmupFrames = ({ onReady, delayFrames = 4 }) => {
   const frameCount = useRef(0);
@@ -17,7 +16,6 @@ const WarmupFrames = ({ onReady, delayFrames = 4 }) => {
   });
   return null;
 };
-  
 
   return (
     <div className="row-span-1 row-start-1 -mt-9 aspect-square md:col-span-1 md:col-start-2 md:mt-0">
@@ -29,7 +27,7 @@ const WarmupFrames = ({ onReady, delayFrames = 4 }) => {
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
       >
         <Suspense fallback={<CanvasLoader />}>
-          <WarmupFrames onReady={() => setTimeout(onReady, 200)} delayFrames={4} />
+          <WarmupFrames onReady={() => setTimeout(onReady, 500)} delayFrames={6} />
           <Geometries />
           <ContactShadows
             position={[0, -3.5, 0]}
