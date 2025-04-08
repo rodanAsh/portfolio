@@ -29,7 +29,7 @@ const WarmupFrames = ({ onReady, delayFrames = 4 }) => {
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
       >
         <Suspense fallback={<CanvasLoader />}>
-          <WarmupFrames onReady={() => setTimeout(onReady, 500)} delayFrames={4} />
+          <WarmupFrames onReady={() => setTimeout(onReady, 200)} delayFrames={4} />
           <Geometries />
           <ContactShadows
             position={[0, -3.5, 0]}
