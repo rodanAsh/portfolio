@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import grid1 from "../assets/grid1.png";
-import grid2 from "../assets/grid2.png";
-import grid3 from "../assets/grid3.png";
-import grid4 from "../assets/grid4.png";
+import grid1 from "../../public/assets/grid1.png";
+import grid2 from "../../public/assets/grid2.png";
+import grid3 from "../../public/assets/grid3.png";
+import grid4 from "../../public/assets/grid4.png";
 import AboutGlobe from '../components/AboutGlobe'
 import Button from "../components/Button";
-import tick from "../assets/tick.svg";
-import copy from "../assets/copy.svg";
+import tick from "../../public/assets/tick.svg";
+import copy from "../../public/assets/copy.svg";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);

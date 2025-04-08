@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { navLinks } from "../constants";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
+import menu from "../../public/assets/menu.svg";
+import close from "../../public/assets/close.svg";
 import { MdArrowOutward } from "react-icons/md";
 
 const Header = () => {

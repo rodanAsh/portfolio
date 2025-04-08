@@ -1,6 +1,6 @@
 import React from "react";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
+import github from "../../public/assets/github.svg";
+import linkedin from "../../public/assets/linkedin.svg";
 import { navLinks } from "../constants";
 
 const Footer = () => {
