@@ -1,14 +1,17 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import React, { useState } from "react";
+import { useRef, useLayoutEffect } from "react";
 import Shapes from "../components/Shapes";
 import { MdArrowOutward } from "react-icons/md";
 import gsap from "gsap";
 
-
 const Hero = () => {
   const componentRef = useRef(null);
+  const [shapesReady, setShapesReady] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+
+    if (!shapesReady) return;
+
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
@@ -50,8 +53,8 @@ const Hero = () => {
       );
     }, componentRef);
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert();  
+  }, [shapesReady]);
 
   const renderLetters = (name, key) => {
     if (!name) return;
@@ -76,7 +79,10 @@ const Hero = () => {
     >
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
-          <Shapes />
+          <Shapes
+            onReady = {() => setShapesReady(true)}
+            delayFrames={6}
+          />
           <div className="col-start-1 md:row-start-1">
             <h1
               className="mb-8 text-[clamp(3rem,18vmin,20rem)] font-extrabold leading-none tracking-tighter"
@@ -84,13 +90,13 @@ const Hero = () => {
             >
               <span className="block text-slate-300">
                 <span>{renderLetters("Hi,", "first")}</span>{" "}
-                <span>{renderLetters("Iam", "first")}</span>
+                <span>{renderLetters("I am", "first")}</span>
               </span>
               <span className="-mt-[.2em] block text-slate-500">
                 {renderLetters("Aakash", "last")}
               </span>
               <span className="job-title  block bg-gradient-to-tr from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-2xl font-bold uppercase tracking-[.2em] text-transparent opacity-0 md:text-4xl">
-                Web Developer
+                React Developer
               </span>
             </h1>
             <button className="ml-3">

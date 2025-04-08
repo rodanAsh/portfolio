@@ -1,3 +1,4 @@
+import React from "react";
 import * as THREE from "three";
 import Geometry from "./Geometry";
 
@@ -68,4 +69,4 @@ const Geometries = () => {
   ));
 };
 
-export default Geometries;
+export default React.memo(Geometries);

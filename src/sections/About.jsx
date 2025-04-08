@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import grid1 from "../../public/assets/grid1.png";
-import grid2 from "../../public/assets/grid2.png";
-import grid3 from "../../public/assets/grid3.png";
-import grid4 from "../../public/assets/grid4.png";
+import grid1 from "../assets/grid1.png";
+import grid2 from "../assets/grid2.png";
+import grid3 from "../assets/grid3.png";
+import grid4 from "../assets/grid4.png";
 import AboutGlobe from '../components/AboutGlobe'
 import Button from "../components/Button";
-import tick from "../../public/assets/tick.svg";
-import copy from "../../public/assets/copy.svg";
+import tick from "../assets/tick.svg";
+import copy from "../assets/copy.svg";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -33,7 +33,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hey, I'm Aakash! </p>
               <p className="grid-subtext">
-                I grew up in the South India and love all things creative. From the misty forests to the vibrant streets of South India, my surroundings have always sparked my creativity and love for design and coding.
+                React developer who loves turning creative ideas into smooth, responsive web apps. I enjoy building clean, reusable components and bringing designs to life with a focus on performance and user experience.
               </p>
             </div>
           </div>
@@ -49,8 +49,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in Javascript/Typescript with a focus in react
-                ecosystem.
+                I specialize in Javascript/Typescript with a focus in React.js ecosystem.
               </p>
             </div>
           </div>
